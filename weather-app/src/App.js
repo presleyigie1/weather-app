@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import axios from 'axios'
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
   {/*api open weather */}
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=7e90a95bc92bd67be10ab342446813ab`
 
-  {/*grab url, if "enter" is pressed submit input */}
+  {/* request http/ grab url, if "enter" is pressed submit input */}
   const searchLocation = (e) => {
     if(e.key === 'Enter'){
       axios.get(url).then((response) =>{
@@ -36,6 +36,8 @@ function App() {
             {/*check if parent element available if so, display otherwise return null*/}
              {data.sys ? <h1 className="cName">{`${data.name}, ${data.sys.country}`}</h1> :null}
            </div>
+            {/*if main exists show temp from mai
+            round the number */}
             <div className="temp">
               {data.main ? <h1>{data.main.temp.toFixed()}°C</h1> :null}
             </div>
