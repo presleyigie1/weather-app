@@ -13,7 +13,7 @@ ReactJS
 > - Displayed weather, used openweather JSON as template to find id's needed
 
 
-#### Desktop view: ![Desktop View](../assets/viewdesktop.png)
+#### Desktop view: ![Desktop View](weather-app/src/assets/viewdesktop.png)
 
 #### Mobile View:
 ![Mobile View](weather-app/src/assets/viewmobile.png)
