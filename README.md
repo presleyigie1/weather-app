@@ -16,6 +16,6 @@ ReactJS
 #### Desktop view: ![Desktop View](../assets/viewdesktop.png)
 
 #### Mobile View:
-![Mobile View](src/assets/viewmobile.png)
+![Mobile View](weather-app/src/assets/viewmobile.png)
 
 
