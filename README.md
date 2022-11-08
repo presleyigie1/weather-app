@@ -1,5 +1,5 @@
 #### Weather App created in React Javascript for users to view the weather in all countries with the use of an API
-## Website: link:https://636995f0487e0532625195cc--gorgeous-madeleine-44ff24.netlify.app/
+### download the files use npm start to run the app
 Tech used: ReactJS
 	
 > ####	Here are the lists of taks done during this project:
