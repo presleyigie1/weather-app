@@ -1,3 +1,3 @@
 {/*repleace the "XXXX" with your api open weather api key*/}
-const apikey = "XX"
+const apikey = "XXXX"
 export default apikey;
