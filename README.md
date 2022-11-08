@@ -4,7 +4,7 @@ Tech used: ReactJS
 	
 > ####	Here are the lists of taks done during this project:
 > - used 'useState' hook
-> - Used axios to make HTTP requst  
+> - Used axios to make HTTP request  
 > - Created the location search using axios
 > - Designed layout of how the weather would be displayed in index.css
 > - Ask the user (in the container) to Input a location in the search bar
