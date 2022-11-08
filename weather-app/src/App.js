@@ -1,13 +1,17 @@
 import React, { useState } from 'react'
 import axios from 'axios'
+import apikey from "./config";
 
 function App() {
   {/*set empty objects */}
   const [data,setData] = useState({})
   const [location, setLocation] = useState('')
  
+  
+ 
+
   {/*api open weather */}
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=7e90a95bc92bd67be10ab342446813ab`
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=${apikey}`
 
   {/* request http/ grab url, if "enter" is pressed submit input */}
   const searchLocation = (e) => {
@@ -46,7 +50,7 @@ function App() {
             </div>
             
             {/*hide the p tag of wind and humidity if there is no city*/}
-          {data.name != undefined &&
+          {data.name !== undefined &&
             <div>
               <div className="humidity">
                 {data.main ? <p className="humidityAmt">{data.main.humidity}%</p> : null}
@@ -59,7 +63,7 @@ function App() {
             </div>
           }
           {/*tell the  user to enter city */}
-          {data.name == undefined &&
+          {data.name === undefined &&
             <div>
               <p className="prompt"><em>Enter a Location Above to See Weather</em> </p>
             </div>

@@ -12,6 +12,7 @@ ReactJS
 > - Ask the user (in the container) to Input a location in the search bar
 > - Displayed weather, used openweather JSON as template to find id's needed
 
+Note: If you would like to use the app, go into the config.js file and enter your own openweather api key (repleace XXXX with your api key)
 
 #### Desktop view: ![Desktop View](weather-app/src/assets/viewdesktop.png)
 
